@@ -1,0 +1,73 @@
+/* CSS Variables for Theme */
+:root {
+    /* addd */
+     --glass-bg-rgb: 255, 255, 255;
+    --glass-border-rgb: 229, 231, 235;
+    --primary-color-rgb: 59, 130, 246;
+/* add */
+    /* Light Theme */
+    --primary-color: #4361ee;
+    --secondary-color: #3a0ca3;
+    --accent-color: #4cc9f0;
+    --success-color: #06d6a0;
+    --warning-color: #ffd166;
+    --danger-color: #ef476f;
+    --text-color: #1a1a2e;
+    --text-secondary: #6c757d;
+    --bg-color: #f8f9fa;
+    --bg-secondary: #e9ecef;
+    --card-bg: #ffffff;
+    --border-color: #dee2e6;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.12);
+    --gradient: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+    --gradient-accent: linear-gradient(135deg, #4cc9f0 0%, #4361ee 100%);
+    --gradient-text: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+    
+    /* Glass Effect */
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+    
+    /* Animation Variables */
+    --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-medium: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Font Variables */
+    --font-heading-ar: 'Tajawal', sans-serif;
+    --font-heading-en: 'Montserrat', sans-serif;
+    --font-body-ar: 'Inter', 'Tajawal', sans-serif;
+    --font-body-en: 'Inter', 'Montserrat', sans-serif;
+}
+
+.dark-mode {
+
+      --glass-bg-rgb: 15, 23, 42;
+    --glass-border-rgb: 30, 41, 59;
+
+    
+    /* Dark Theme - Default */
+    --primary-color: #5a6ff0;
+    --secondary-color: #4d1ec9;
+    --accent-color: #5ed3f3;
+    --success-color: #0ce8ac;
+    --warning-color: #ffda7a;
+    --danger-color: #f55c84;
+    --text-color: #f1f3f9;
+    --text-secondary: #a8b2d1;
+    --bg-color: #0a0e17;
+    --bg-secondary: #121828;
+    --card-bg: #1a2036;
+    --border-color: #2a3149;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.35);
+    --gradient: linear-gradient(135deg, #5a6ff0 0%, #4d1ec9 100%);
+    --gradient-accent: linear-gradient(135deg, #5ed3f3 0%, #5a6ff0 100%);
+    --gradient-text: linear-gradient(135deg, #5a6ff0 0%, #4d1ec9 100%);
+    
+    /* Glass Effect */
+    --glass-bg: rgba(30, 41, 59, 0.5);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}

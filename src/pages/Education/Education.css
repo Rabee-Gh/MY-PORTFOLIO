@@ -1,0 +1,303 @@
+/* ========== Education Timeline ========== */
+.education-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ========== Main Degree Card ========== */
+.main-degree-card {
+    background: linear-gradient(135deg, var(--card-bg) 0%, rgba(var(--primary-color-rgb), 0.05) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.main-degree-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--gradient);
+}
+
+.degree-icon-wrapper {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.degree-icon-wrapper i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    position: relative;
+    z-index: 2;
+}
+
+.glowing-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+    animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+    0% { transform: scale(0.95); opacity: 0.5; }
+    70% { transform: scale(1.1); opacity: 0; }
+    100% { transform: scale(0.95); opacity: 0; }
+}
+
+.degree-badge {
+    background: var(--gradient);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.timeline-progress {
+    margin-top: 1.5rem;
+}
+
+.progress-bar {
+    height: 8px;
+    background: var(--bg-secondary);
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--gradient);
+    border-radius: 4px;
+    position: relative;
+}
+
+.progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* ========== Certificates Timeline ========== */
+.certificates-timeline {
+    position: relative;
+    padding-left: 40px;
+}
+
+.certificates-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 2px;
+    height: 100%;
+    background: var(--gradient);
+}
+
+.certificate-node {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.node-dot {
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    border: 3px solid var(--card-bg);
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.certificate-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    padding: 1.2rem;
+    transition: all var(--transition-medium);
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--primary-color);
+}
+
+.cert-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cert-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.cert-meta {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+/* ========== Responsive Education ========== */
+@media (max-width: 992px) {
+    .main-degree-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+    
+    .main-degree-card::before {
+        width: 100%;
+        height: 5px;
+        top: 0;
+        left: 0;
+    }
+    
+    .degree-icon-wrapper {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .degree-icon-wrapper i {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .education-timeline {
+        padding: 0 1rem;
+    }
+    
+    .main-degree-card {
+        margin-bottom: 2rem;
+        padding: 1.2rem;
+    }
+    
+    .certificates-timeline {
+        padding-left: 30px;
+    }
+    
+    .certificates-timeline::before {
+        left: 15px;
+    }
+    
+    .node-dot {
+        left: -20px;
+        width: 10px;
+        height: 10px;
+    }
+    
+    .certificate-card {
+        padding: 1rem;
+    }
+    
+    .cert-header {
+        gap: 0.8rem;
+    }
+    
+    .cert-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+    
+    .cert-meta {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-degree-card {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .degree-icon-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .degree-icon-wrapper i {
+        font-size: 1.8rem;
+    }
+    
+    .degree-badge {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.8rem;
+    }
+    
+    .certificates-timeline {
+        padding-left: 25px;
+    }
+    
+    .certificates-timeline::before {
+        left: 12px;
+    }
+    
+    .node-dot {
+        left: -17px;
+        width: 8px;
+        height: 8px;
+        border-width: 2px;
+    }
+    
+    .certificate-card {
+        padding: 0.8rem;
+    }
+    
+    .cert-header {
+        gap: 0.6rem;
+    }
+    
+    .cert-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+        border-radius: 10px;
+    }
+    
+    .cert-meta {
+        font-size: 0.8rem;
+    }
+}

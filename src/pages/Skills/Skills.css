@@ -1,0 +1,215 @@
+/* ========== Skills Tabs ========== */
+.skills-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.skill-tab {
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-medium);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.skill-tab:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+}
+
+.skill-tab.active {
+    background: var(--gradient);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.2);
+}
+
+.skill-tab i {
+    font-size: 1.2rem;
+}
+
+/* ========== Skills Grid Container ========== */
+.skills-grid-container {
+    min-height: 500px;
+    position: relative;
+}
+
+/* ========== Skills Grids ========== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.8rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+}
+
+.skills-grid.active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    position: relative;
+}
+
+/* ========== Skill Cards ========== */
+.skill-card-small {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 1.8rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-medium);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.skill-card-small:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--primary-color);
+}
+
+.skill-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    font-size: 2rem;
+    transition: all var(--transition-medium);
+}
+
+.skill-card-small:hover .skill-icon-wrapper {
+    background: var(--gradient);
+    color: white;
+    transform: scale(1.05);
+}
+
+.skill-card-small h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-color);
+}
+
+.skill-description {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+    flex-grow: 1;
+}
+
+.skill-level {
+    display: inline-block;
+    background: var(--bg-secondary);
+    color: var(--text-color);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.skill-card-small:hover .skill-level {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* ========== Responsive Skills ========== */
+@media (max-width: 992px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .skill-card-small {
+        padding: 1.5rem;
+    }
+    
+    .skill-icon-wrapper {
+        width: 65px;
+        height: 65px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-tabs {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    
+    .skill-tab {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        padding: 0.9rem 1.5rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    
+    .skills-grid-container {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .skill-tab {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.95rem;
+    }
+    
+    .skill-tab i {
+        font-size: 1.1rem;
+    }
+    
+    .skill-card-small {
+        padding: 1.2rem;
+    }
+    
+    .skill-icon-wrapper {
+        width: 60px;
+        height: 60px;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .skill-card-small h4 {
+        font-size: 1.1rem;
+    }
+    
+    .skill-description {
+        font-size: 0.85rem;
+    }
+    
+    .skill-level {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+    }
+}

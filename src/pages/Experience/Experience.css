@@ -1,0 +1,223 @@
+
+/* ========== Experience Timeline ========== */
+.experience-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 3rem auto 0;
+}
+
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: var(--gradient);
+}
+
+/* ========== Timeline Items ========== */
+.timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: calc(50% + 1.5rem);
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.timeline-item:nth-child(even) {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: calc(50% + 1.5rem);
+}
+
+.timeline-content {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 1.8rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+    transition: all var(--transition-medium);
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--primary-color);
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    background: var(--card-bg);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    transform: rotate(-45deg);
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+    right: auto;
+    left: -8px;
+    border-right: none;
+    border-left: 1px solid var(--border-color);
+    transform: rotate(45deg);
+}
+
+.timeline-marker {
+    position: absolute;
+    top: 25px;
+    right: calc(50% - 8px);
+    width: 16px;
+    height: 16px;
+    background: var(--gradient);
+    border-radius: 50%;
+    border: 3px solid var(--bg-color);
+    z-index: 2;
+}
+
+.timeline-item:nth-child(even) .timeline-marker {
+    right: auto;
+    left: calc(50% - 8px);
+}
+
+/* ========== Timeline Content ========== */
+.timeline-date {
+    background: var(--gradient);
+    color: white;
+    padding: 0.4rem 1.2rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+.timeline-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.timeline-company {
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.timeline-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ========== Responsive Experience ========== */
+@media (max-width: 992px) {
+    .experience-timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item,
+    .timeline-item:nth-child(even) {
+        justify-content: flex-start;
+        padding-right: 0;
+        padding-left: 60px;
+    }
+    
+    .timeline-content::before {
+        right: auto;
+        left: -8px;
+        border-right: none;
+        border-left: 1px solid var(--border-color);
+        transform: rotate(45deg);
+    }
+    
+    .timeline-marker {
+        right: auto;
+        left: 22px;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-marker {
+        left: 22px;
+    }
+    
+    .timeline-content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-timeline {
+        margin-top: 2rem;
+    }
+    
+    .timeline-item {
+        margin-bottom: 2rem;
+    }
+    
+    .timeline-content {
+        padding: 1.5rem;
+    }
+    
+    .timeline-title {
+        font-size: 1.1rem;
+    }
+    
+    .timeline-company {
+        font-size: 0.9rem;
+    }
+    
+    .timeline-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .experience-timeline {
+        margin-top: 1.5rem;
+    }
+    
+    .timeline-item {
+        margin-bottom: 1.5rem;
+        padding-left: 50px;
+    }
+    
+    .timeline-content {
+        padding: 1.2rem;
+    }
+    
+    .timeline-date {
+        font-size: 0.8rem;
+        padding: 0.3rem 1rem;
+    }
+    
+    .timeline-title {
+        font-size: 1rem;
+    }
+    
+    .timeline-company {
+        font-size: 0.85rem;
+        gap: 0.3rem;
+    }
+    
+    .timeline-description {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+}
+
+.mb-spicial{
+    margin-bottom: 3.5rem !important;
+}
