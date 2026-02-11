@@ -94,7 +94,6 @@ function App() {
       />
       
 
-        {/* <Hero data={portfolioData} isEnglish={isEnglish} /> */}
         <Hero data={portfolioData} isEnglish={isEnglish}/>
         <About data={portfolioData} isEnglish={isEnglish} />
         <Projects data={portfolioData} isEnglish={isEnglish} />

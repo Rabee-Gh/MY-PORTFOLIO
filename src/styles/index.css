@@ -261,3 +261,9 @@ html[dir="ltr"] h6 {
         font-size: 0.9rem;
     }
 }
+
+
+/*  */
+body{
+    overflow: clip !important;
+}
