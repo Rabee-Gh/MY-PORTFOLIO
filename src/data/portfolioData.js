@@ -9,7 +9,7 @@ export const portfolioData = {
   personalInfo: {
     name: "ربيع غانم",
     nameEn: "Rabee Ghanem",
-    title: "مطور ويب كامل",
+    title: "Full Stack Web Developer",
     titleEn: "Full Stack Web Developer",
     birthDate: "11 يوليو 2003",
     birthDateEn: "July 11, 2003",
@@ -33,7 +33,7 @@ export const portfolioData = {
       question: "من أنت وماذا تفعل؟",
       questionEn: "Who are you and what do you do?",
       answer:
-        "أنا ربيع غانم، مطور ويب كامل متخصص في بناء تطبيقات الويب الحديثة باستخدام تقنيات MERN Stack. شغفي يكمن في تحويل الأفكار إلى تطبيقات ويب واقعية وسهلة الاستخدام.",
+        "أنا ربيع غانم، مطور ويب  متخصص في بناء تطبيقات الويب الحديثة باستخدام تقنيات MERN Stack. شغفي يكمن في تحويل الأفكار إلى تطبيقات ويب واقعية وسهلة الاستخدام.",
       answerEn:
         "I am Rabee Ghanem, a Full Stack Web Developer specializing in building modern web applications using MERN Stack technologies. My passion lies in turning ideas into real, user-friendly web applications.",
     },
@@ -250,6 +250,26 @@ export const portfolioData = {
     },
     {
       id: 11,
+      title: " منصة استعراض ألعاب",
+      titleEn: "Cyborg - Gaming Platform",
+      description:
+        "موقع ويب تفاعلي مبني باستخدام React.js لعرض الألعاب الشهيرة والمحتوى المرتبط بها. يعرض الموقع قوائم للألعاب الأكثر شعبية مع تفاصيل مثل التصنيف، عدد اللاعبين، ويحاكي تجربة مكتبة ألعاب رقمية تحتوي على ساعات اللعب وتاريخ الإضافة. يتميز بواجهة مستخدم عصرية وتصميم متجاوب باستخدام Bootstrap.",
+      descriptionEn:
+        "An interactive website built with React.js for showcasing popular games and related content. The site displays lists of most popular games with details like category, player counts, and simulates a digital game library experience with playtime hours and addition dates. Features a modern UI and responsive design using Bootstrap.",
+      technologies: [
+        "React",
+        "React Bootstrap",
+        "React OWL Carousel",
+        "Bootstrap",
+        "React Router",
+        "React Icons",
+      ],
+      githubUrl: "https://github.com/Rabee-Gh/Cyborg.git",
+      demoUrl: "https://rabee-gh.github.io/Cyborg/",
+      icon: "fas fa-gamepad",
+    },
+    {
+      id: 12,
       title: "مجتمع ومركز للألعاب",
       titleEn: "Gaming Center - Gaming Community",
       description:
@@ -262,7 +282,7 @@ export const portfolioData = {
       icon: "fas fa-gamepad",
     },
     {
-      id: 12,
+      id: 13,
       title: "خادم API لإدارة المنتجات باستخدام",
       titleEn: "Product Management API Server",
       description:
@@ -274,7 +294,7 @@ export const portfolioData = {
       icon: "fas fa-server",
     },
     {
-      id: 13,
+      id: 14,
       title: "Kasper",
       titleEn: "Kasper",
       description:
@@ -287,7 +307,7 @@ export const portfolioData = {
       icon: "fas fa-palette",
     },
     {
-      id: 14,
+      id: 15,
       title: "Leon",
       titleEn: "Leon",
       description:
@@ -300,7 +320,7 @@ export const portfolioData = {
       icon: "fas fa-palette",
     },
     {
-      id: 15,
+      id: 16,
       title: "نظام إدارة مكتبة",
       titleEn: "Library Management System",
       description:

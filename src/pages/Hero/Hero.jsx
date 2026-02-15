@@ -22,7 +22,7 @@ const Hero = ({ data, isEnglish }) => {
           data-aos-delay="100"
         >
           <i className="fas fa-rocket"></i>
-          <span>{isEnglish ? (data.personalInfo?.titleEn || 'Full Stack Developer') : (data.personalInfo?.title || 'مطور ويب كامل')}</span>
+          <span>{isEnglish ? (data.personalInfo?.titleEn || 'Full Stack Developer') : (data.personalInfo?.title || 'مطور ويب ')}</span>
         </div>
         
         <h2 
@@ -42,7 +42,7 @@ const Hero = ({ data, isEnglish }) => {
         >
           {isEnglish 
             ? 'Passionate Full Stack Developer specializing in modern web technologies. I create fast, responsive, and user-friendly web applications with clean code and innovative solutions.'
-            : 'مطور ويب كامل شغوف متخصص في تقنيات الويب الحديثة. أصنع تطبيقات ويب سريعة، متجاوبة وسهلة الاستخدام مع كود نظيف وحلول مبتكرة.'}
+            : 'مطور ويب  شغوف متخصص في تقنيات الويب الحديثة. أصنع تطبيقات ويب سريعة، متجاوبة وسهلة الاستخدام مع كود نظيف وحلول مبتكرة.'}
         </p>
         
         <div 
