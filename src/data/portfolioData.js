@@ -1,5 +1,6 @@
 export const navLinks = [
   { id: "about", labelEn: "About", labelAr: "عنّي" },
+  { id: "services", labelEn: "Services", labelAr: "الخدمات" },
   { id: "projects", labelEn: "Projects", labelAr: "المشاريع" },
   { id: "skills", labelEn: "Skills", labelAr: "المهارات" },
   { id: "experience", labelEn: "Experience", labelAr: "الخبرة" },
@@ -27,6 +28,99 @@ export const portfolioData = {
     summaryEn:
       "Ambitious and results-driven Full Stack Web Developer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js), with hands-on experience gained through two intensive internships and numerous real-world projects. Demonstrated ability to build responsive, scalable web applications from concept to deployment.",
   },
+
+  services: [
+    {
+      id: 1,
+      title:"Frontend Development",
+      titleEn: "Frontend Development",
+      description: "بناء واجهات مستخدم تفاعلية وجذابة باستخدام أحدث تقنيات الويب مثل React.js و TypeScript. أصمم تجارب مستخدم سلسة ومتجاوبة على جميع الأجهزة مع التركيز على الأداء والسرعة.",
+      descriptionEn: "Building interactive and attractive user interfaces using the latest web technologies like React.js and TypeScript. I design smooth and responsive user experiences across all devices with focus on performance and speed.",
+      icon: "fas fa-laptop-code",
+      color: "#4361ee",
+      features: [
+        { text: "تطبيقات React.js متقدمة", textEn: "Advanced React.js Applications" },
+        { text: "تصميم متجاوب بالكامل", textEn: "Fully Responsive Design" },
+        { text: "تحسين الأداء والسرعة", textEn: "Performance Optimization" },
+        { text: "تجربة مستخدم استثنائية", textEn: "Exceptional User Experience" }
+      ]
+    },
+    {
+      id: 2,
+      title: "Backend Development",
+      titleEn: "Backend Development",
+      description: "إنشاء أنظمة  قوية وآمنة باستخدام Node.js و Express.js. أطور RESTful APIs قابلة للتطوير مع قواعد بيانات MongoDB، مع تطبيق أفضل ممارسات الأمان والأداء.",
+      descriptionEn: "Creating robust and secure backend systems using Node.js and Express.js. I develop scalable RESTful APIs with MongoDB databases, implementing best security and performance practices.",
+      icon: "fas fa-server",
+      color: "#3a0ca3",
+      features: [
+        { text:  "RESTful APIs" , textEn: "RESTful APIs" },
+        { text: "قواعد بيانات MongoDB", textEn: "MongoDB Databases" },
+        { text: "أنظمة مصادقة آمنة", textEn: "Secure Authentication Systems" },
+        { text: "معالجة البيانات الفورية", textEn: "Real-time Data Processing" }
+      ]
+    },
+    {
+      id: 3,
+      title: "Full Stack Development",
+      titleEn: "Full Stack Development",
+      description: "حلول متكاملة من البداية للنهاية باستخدام MERN Stack. أقوم ببناء تطبيقات ويب كاملة تجمع بين واجهة مستخدم رائعة ونظام خلفي قوي، من الفكرة إلى النشر.",
+      descriptionEn: "Complete end-to-end solutions using MERN Stack. I build full web applications combining beautiful frontend with powerful backend, from concept to deployment.",
+      icon: "fas fa-layer-group",
+      color: "#4cc9f0",
+      features: [
+        { text: "تطبيقات MERN Stack", textEn: "MERN Stack Applications" },
+        { text: "تكامل كامل Frontend/Backend", textEn: "Full Frontend/Backend Integration" },
+        { text: "نشر وإدارة التطبيقات", textEn: "Application Deployment & Management" },
+        { text: "صيانة ودعم مستمر", textEn: "Continuous Maintenance & Support" }
+      ]
+    },
+    {
+      id: 4,
+      title: "تطوير منصات التجارة الإلكترونية",
+      titleEn: "E-commerce Platform Development",
+      description: "بناء متاجر إلكترونية احترافية ومتكاملة مع أنظمة إدارة المنتجات، سلة التسوق، والدفع الآمن. حلول مخصصة تناسب احتياجات عملك التجاري.",
+      descriptionEn: "Building professional and integrated e-commerce stores with product management systems, shopping cart, and secure payment. Custom solutions tailored to your business needs.",
+      icon: "fas fa-shopping-cart",
+      color: "#06d6a0",
+      features: [
+        { text: "إدارة المنتجات والمخزون", textEn: "Product & Inventory Management" },
+        { text: "أنظمة دفع آمنة", textEn: "Secure Payment Systems" },
+        { text: "لوحات تحكم إدارية", textEn: "Admin Dashboards" },
+        { text: "تقارير وتحليلات", textEn: "Reports & Analytics" }
+      ]
+    },
+    {
+      id: 5,
+      title: "تحسين وصيانة المواقع",
+      titleEn: "Website Optimization & Maintenance",
+      description: "تحسين أداء المواقع الحالية، إصلاح المشاكل التقنية، وتحديث التقنيات القديمة. أضمن أن موقعك يعمل بأفضل أداء ممكن مع أحدث معايير الويب.",
+      descriptionEn: "Optimizing existing website performance, fixing technical issues, and updating legacy technologies. I ensure your website runs at peak performance with latest web standards.",
+      icon: "fas fa-tools",
+      color: "#ffd166",
+      features: [
+        { text: "تحسين سرعة التحميل", textEn: "Loading Speed Optimization" },
+        { text: "إصلاح الأخطاء التقنية", textEn: "Technical Bug Fixes" },
+        { text: "تحديث التقنيات", textEn: "Technology Updates" },
+        { text: "تحسين SEO", textEn: "SEO Optimization" }
+      ]
+    },
+    {
+      id: 6,
+      title: "استشارات تقنية",
+      titleEn: "Technical Consulting",
+      description: "تقديم استشارات تقنية متخصصة لمشاريعك، اختيار التقنيات المناسبة، تصميم البنية التحتية، وأفضل الممارسات في تطوير الويب لضمان نجاح مشروعك.",
+      descriptionEn: "Providing specialized technical consulting for your projects, choosing the right technologies, infrastructure design, and web development best practices to ensure your project's success.",
+      icon: "fas fa-lightbulb",
+      color: "#ef476f",
+      features: [
+        { text: "اختيار التقنيات المناسبة", textEn: "Technology Stack Selection" },
+        { text: "تصميم البنية التحتية", textEn: "Architecture Design" },
+        { text: "مراجعة الكود", textEn: "Code Review" },
+        { text: "أفضل الممارسات", textEn: "Best Practices" }
+      ]
+    }
+  ],
 
   aboutQuestions: [
     {

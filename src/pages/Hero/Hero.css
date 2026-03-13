@@ -34,6 +34,10 @@
 .hero-badge i{
     margin-right: 15px;
 }
+.arm{
+    margin-right: 0px !important;
+    margin-left: 15px;
+}
 
 .hero-subtitle {
     font-size: 1.8rem;

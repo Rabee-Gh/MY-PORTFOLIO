@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Header from './components/Header/Header.jsx'
 import About from './pages/About/About.jsx'
+import Services from './pages/Services/Services.jsx'
 import Projects from './pages/Projects/Projects.jsx'
 import Skills from './pages/Skills/Skills.jsx'
 import Experience from './pages/Experience/Experience.jsx'
@@ -83,8 +84,8 @@ function App() {
         <div className="floating-element"></div>
         <div className="floating-element"></div>
       </div>
-      
-      <Header 
+
+      <Header
         isDarkMode={isDarkMode}
         isEnglish={isEnglish}
         toggleTheme={toggleTheme}
@@ -92,17 +93,18 @@ function App() {
         currentSection={currentSection}
         updateCurrentSection={updateCurrentSection}
       />
-      
 
-        <Hero data={portfolioData} isEnglish={isEnglish}/>
-        <About data={portfolioData} isEnglish={isEnglish} />
-        <Projects data={portfolioData} isEnglish={isEnglish} />
-        <Skills data={portfolioData} isEnglish={isEnglish} />
-        <Experience data={portfolioData} isEnglish={isEnglish} />
-        <Education data={portfolioData} isEnglish={isEnglish} />
-        <Contact data={portfolioData} isEnglish={isEnglish} />
 
-      
+      <Hero data={portfolioData} isEnglish={isEnglish} />
+      <About data={portfolioData} isEnglish={isEnglish} />
+      <Services data={portfolioData} isEnglish={isEnglish} />
+      <Projects data={portfolioData} isEnglish={isEnglish} />
+      <Skills data={portfolioData} isEnglish={isEnglish} />
+      <Experience data={portfolioData} isEnglish={isEnglish} />
+      <Education data={portfolioData} isEnglish={isEnglish} />
+      <Contact data={portfolioData} isEnglish={isEnglish} />
+
+
       <Footer data={portfolioData} isEnglish={isEnglish} />
       <BackToTop />
     </>
