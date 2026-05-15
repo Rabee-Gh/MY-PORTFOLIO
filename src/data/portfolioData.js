@@ -77,21 +77,6 @@ export const portfolioData = {
     },
     {
       id: 4,
-      title: "تطوير منصات التجارة الإلكترونية",
-      titleEn: "E-commerce Platform Development",
-      description: "بناء متاجر إلكترونية احترافية ومتكاملة مع أنظمة إدارة المنتجات، سلة التسوق، والدفع الآمن. حلول مخصصة تناسب احتياجات عملك التجاري.",
-      descriptionEn: "Building professional and integrated e-commerce stores with product management systems, shopping cart, and secure payment. Custom solutions tailored to your business needs.",
-      icon: "fas fa-shopping-cart",
-      color: "#06d6a0",
-      features: [
-        { text: "إدارة المنتجات والمخزون", textEn: "Product & Inventory Management" },
-        { text: "أنظمة دفع آمنة", textEn: "Secure Payment Systems" },
-        { text: "لوحات تحكم إدارية", textEn: "Admin Dashboards" },
-        { text: "تقارير وتحليلات", textEn: "Reports & Analytics" }
-      ]
-    },
-    {
-      id: 5,
       title: "تحسين وصيانة المواقع",
       titleEn: "Website Optimization & Maintenance",
       description: "تحسين أداء المواقع الحالية، إصلاح المشاكل التقنية، وتحديث التقنيات القديمة. أضمن أن موقعك يعمل بأفضل أداء ممكن مع أحدث معايير الويب.",
@@ -106,7 +91,7 @@ export const portfolioData = {
       ]
     },
     {
-      id: 6,
+      id: 5,
       title: "استشارات تقنية",
       titleEn: "Technical Consulting",
       description: "تقديم استشارات تقنية متخصصة لمشاريعك، اختيار التقنيات المناسبة، تصميم البنية التحتية، وأفضل الممارسات في تطوير الويب لضمان نجاح مشروعك.",
@@ -119,7 +104,22 @@ export const portfolioData = {
         { text: "مراجعة الكود", textEn: "Code Review" },
         { text: "أفضل الممارسات", textEn: "Best Practices" }
       ]
-    }
+    },
+    {
+      id: 6,
+      title: "تطوير منصات التجارة الإلكترونية",
+      titleEn: "E-commerce Platform Development",
+      description: "بناء متاجر إلكترونية احترافية ومتكاملة مع أنظمة إدارة المنتجات، سلة التسوق، والدفع الآمن. حلول مخصصة تناسب احتياجات عملك التجاري.",
+      descriptionEn: "Building professional and integrated e-commerce stores with product management systems, shopping cart, and secure payment. Custom solutions tailored to your business needs.",
+      icon: "fas fa-shopping-cart",
+      color: "#06d6a0",
+      features: [
+        { text: "إدارة المنتجات والمخزون", textEn: "Product & Inventory Management" },
+        { text: "أنظمة دفع آمنة", textEn: "Secure Payment Systems" },
+        { text: "لوحات تحكم إدارية", textEn: "Admin Dashboards" },
+        { text: "تقارير وتحليلات", textEn: "Reports & Analytics" }
+      ]
+    },
   ],
 
   aboutQuestions: [
@@ -160,6 +160,28 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
+      title: "موقع د. حيان العربيد - أخصائي الأمراض الجلدية",
+      titleEn: "Dr. Hayyan Al-Arabid - Dermatology Specialist Website",
+      description:
+        "موقع ويب طبي احترافي ومتكامل لطبيب أمراض جلدية، يتضمن واجهة أمامية أنيقة وسهلة الاستخدام مع نظام خلفي متكامل. يتيح للمرضى التعرف على الخدمات الطبية المقدمة، حجز المواعيد، والتواصل مع العيادة. يتميز بتصميم احترافي يعكس المستوى الطبي الرفيع للدكتور، مع دعم كامل للغة العربية وتجربة مستخدم سلسة على جميع الأجهزة.",
+      descriptionEn:
+        "A professional and comprehensive medical website for a dermatology specialist, featuring an elegant and user-friendly frontend with a fully integrated backend system. Allows patients to learn about medical services, book appointments, and contact the clinic. Features a professional design reflecting the doctor's high medical standards, with full Arabic language support and a smooth user experience across all devices.",
+      technologies: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Tailwind CSS",
+        "JWT",
+        "Nodemailer",
+        "Cloudinary",
+      ],
+      githubUrl: "",
+      demoUrl: "https://drhayyan.com",
+      icon: "fas fa-user-md",
+    },
+    {
+      id: 2,
       title: "منصة أزياء للتجارة الإلكترونية",
       titleEn: "Style Loom - Full-Stack Fashion E-commerce Platform",
       description:
@@ -181,7 +203,7 @@ export const portfolioData = {
       icon: "fas fa-tshirt",
     },
     {
-      id: 2,
+      id: 3,
       title: "المركز الصحي الذكي - نظام حجز المواعيد (Backend)",
       titleEn: "Smart Health Center - Appointment Booking System (Backend)",
       description:
@@ -209,7 +231,7 @@ export const portfolioData = {
       icon: "fas fa-hospital-user",
     },
     {
-      id: 3,
+      id: 4,
       title: "نظام متقدم للمدونات",
       titleEn: "Advanced Blogging System",
       description:
@@ -229,7 +251,7 @@ export const portfolioData = {
       icon: "fas fa-blog",
     },
     {
-      id: 4,
+      id: 5,
       title: "نظام خلفي للتجارة الإلكترونية",
       titleEn: "E-commerce Backend System",
       description:
@@ -250,7 +272,7 @@ export const portfolioData = {
       icon: "fas fa-shopping-cart",
     },
     {
-      id: 5,
+      id: 6,
       title: "موقع ويب للرحلات",
       titleEn: "Tuscany website",
       description:
@@ -271,7 +293,7 @@ export const portfolioData = {
       icon: "fas fa-calendar-alt",
     },
     {
-      id: 6,
+      id: 7,
       title: "منصة تعليمية للأطفال",
       titleEn: "Little Learners - Educational Platform for Kids",
       description:
@@ -284,7 +306,7 @@ export const portfolioData = {
       icon: "fas fa-child",
     },
     {
-      id: 7,
+      id: 8,
       title: "واجهة موقع عقارات",
       titleEn: "FLORA Real Estate Website ",
       description:
@@ -297,7 +319,7 @@ export const portfolioData = {
       icon: "fas fa-house-user",
     },
     {
-      id: 8,
+      id: 9,
       title: " API لنظام أفلام",
       titleEn: "Movies Management API ",
       description:
@@ -309,7 +331,7 @@ export const portfolioData = {
       icon: "fas fa-server",
     },
     {
-      id: 9,
+      id: 10,
       title: "لوحة تحكم - نظام إدارة المنتجات",
       titleEn: "Dashboard - Product Management System (CRUD)",
       description:
@@ -330,7 +352,7 @@ export const portfolioData = {
       icon: "fas fa-chart-line",
     },
     {
-      id: 10,
+      id: 11,
       title: "مجتمع عشاق الأنمي",
       titleEn: "Anime Lovers - Anime Enthusiasts Community",
       description:
@@ -343,7 +365,7 @@ export const portfolioData = {
       icon: "fas fa-tv",
     },
     {
-      id: 11,
+      id: 12,
       title: " منصة استعراض ألعاب",
       titleEn: "Cyborg - Gaming Platform",
       description:
@@ -363,7 +385,7 @@ export const portfolioData = {
       icon: "fas fa-gamepad",
     },
     {
-      id: 12,
+      id: 13,
       title: "مجتمع ومركز للألعاب",
       titleEn: "Gaming Center - Gaming Community",
       description:
@@ -376,7 +398,7 @@ export const portfolioData = {
       icon: "fas fa-gamepad",
     },
     {
-      id: 13,
+      id: 14,
       title: "خادم API لإدارة المنتجات باستخدام",
       titleEn: "Product Management API Server",
       description:
@@ -388,7 +410,7 @@ export const portfolioData = {
       icon: "fas fa-server",
     },
     {
-      id: 14,
+      id: 15,
       title: "Kasper",
       titleEn: "Kasper",
       description:
@@ -401,7 +423,7 @@ export const portfolioData = {
       icon: "fas fa-palette",
     },
     {
-      id: 15,
+      id: 16,
       title: "Leon",
       titleEn: "Leon",
       description:
@@ -414,7 +436,7 @@ export const portfolioData = {
       icon: "fas fa-palette",
     },
     {
-      id: 16,
+      id: 17,
       title: "نظام إدارة مكتبة",
       titleEn: "Library Management System",
       description:
@@ -620,15 +642,16 @@ export const portfolioData = {
         color: "#FF6B6B",
       },
       {
-        name: "JWT",
-        nameEn: "JWT",
+        name: "Firebase",
+        nameEn: "Firebase",
         level: "متوسط",
         levelEn: "Intermediate",
-        description: "توكنات ويب JSON لتوثيق المستخدمين ونقل المعلومات الآمنة",
+        description:
+          "منصة تطوير تطبيقات الويب من Google مع خدمات Authentication وRealtime Database",
         descriptionEn:
-          "JSON Web Tokens for user authentication and secure information exchange",
-        icon: "fas fa-key",
-        color: "#000000",
+          "Google's app development platform with Authentication and Realtime Database services",
+        icon: "fas fa-fire",
+        color: "#FFCA28",
       },
       {
         name: "Socket.IO",
@@ -643,16 +666,15 @@ export const portfolioData = {
         color: "#010101",
       },
       {
-        name: "Firebase",
-        nameEn: "Firebase",
+        name: "JWT",
+        nameEn: "JWT",
         level: "متوسط",
         levelEn: "Intermediate",
-        description:
-          "منصة تطوير تطبيقات الويب من Google مع خدمات Authentication وRealtime Database",
+        description: "توكنات ويب JSON لتوثيق المستخدمين ونقل المعلومات الآمنة",
         descriptionEn:
-          "Google's app development platform with Authentication and Realtime Database services",
-        icon: "fas fa-fire",
-        color: "#FFCA28",
+          "JSON Web Tokens for user authentication and secure information exchange",
+        icon: "fas fa-key",
+        color: "#000000",
       },
       {
         name: "Argon2",
