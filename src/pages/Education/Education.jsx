@@ -11,28 +11,28 @@ const Education = ({ data, isEnglish }) => {
       offset: 100,
       delay: 100
     })
-    
+
     AOS.refresh()
   }, [])
 
   return (
     <div className="education-timeline section">
       <div className="section-header">
-        <span 
+        <span
           className="section-subtitle"
           data-aos="fade-up"
           data-aos-delay="100"
         >
           {isEnglish ? 'Learning path' : 'مسار التعلم'}
         </span>
-        <h2 
+        <h2
           className="section-title"
           data-aos="fade-up"
           data-aos-delay="200"
         >
           {isEnglish ? 'Education' : 'التعليم'}
         </h2>
-        <p 
+        <p
           className="section-description"
           data-aos="fade-up"
           data-aos-delay="300"
@@ -40,8 +40,8 @@ const Education = ({ data, isEnglish }) => {
           {isEnglish ? 'Academic background and professional certifications' : 'الخلفية الأكاديمية والشهادات المهنية'}
         </p>
       </div>
-      
-      <div 
+
+      <div
         className="main-degree-card"
         data-aos="zoom-in-up"
         data-aos-delay="400"
@@ -52,17 +52,17 @@ const Education = ({ data, isEnglish }) => {
           <i className="fas fa-graduation-cap"></i>
           <div className="glowing-ring"></div>
         </div>
-        
+
         <div className="degree-details">
           <div className="degree-badge">
             <span>🎓 {isEnglish ? 'Main Degree' : 'الشهادة الرئيسية'}</span>
           </div>
           <h3>{isEnglish ? data.education[0].degreeEn : data.education[0].degree}</h3>
           <p className="institution">{isEnglish ? data.education[0].institutionEn : data.education[0].institution}</p>
-          
+
           <div className="timeline-progress">
             <div className="progress-bar">
-              <div className="progress-fill" style={{width: '75%'}}></div>
+              <div className="progress-fill" style={{ width: '75%' }}></div>
             </div>
             <span className="period">{data.education[0].periodEn}</span>
           </div>
@@ -71,8 +71,8 @@ const Education = ({ data, isEnglish }) => {
 
       <div className="certificates-timeline">
         {data.education[0].certificates.map((cert, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="certificate-node"
             data-aos="fade-up"
             data-aos-delay={500 + (index * 150)}
@@ -81,18 +81,32 @@ const Education = ({ data, isEnglish }) => {
           >
             <div className="node-dot"></div>
             <div className="node-line"></div>
-            
+
             <div className="certificate-card">
               <div className="cert-header">
-                <div className="cert-icon" style={{background: index === 0 ? 'var(--gradient)' : 
-                  index === 1 ? 'var(--gradient-accent)' : 'var(--success-color)'}}>
+                <div className="cert-icon" style={{
+                  background: index === 0 ? 'var(--gradient)' :
+                    index === 1 ? 'var(--gradient-accent)' : 'var(--success-color)'
+                }}>
                   <i className={cert.icon}></i>
                 </div>
-                <div>
+                <div className="cert-info">
                   <h4>{isEnglish ? cert.nameEn : cert.name}</h4>
                   <p className="cert-meta">{isEnglish ? cert.issuerEn : cert.issuer} • {cert.year}</p>
                 </div>
               </div>
+              {cert.url && (
+                <a
+                  href={cert.url}
+                  className="cert-view-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fas fa-award"></i>
+                  <span>{isEnglish ? 'View Certificate' : 'عرض الشهادة'}</span>
+                  <i className="fas fa-external-link-alt cert-ext-icon"></i>
+                </a>
+              )}
             </div>
           </div>
         ))}

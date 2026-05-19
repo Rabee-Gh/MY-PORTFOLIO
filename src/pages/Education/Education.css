@@ -55,9 +55,20 @@
 }
 
 @keyframes pulse-ring {
-    0% { transform: scale(0.95); opacity: 0.5; }
-    70% { transform: scale(1.1); opacity: 0; }
-    100% { transform: scale(0.95); opacity: 0; }
+    0% {
+        transform: scale(0.95);
+        opacity: 0.5;
+    }
+
+    70% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
 }
 
 .degree-badge {
@@ -98,13 +109,18 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
     animation: shimmer 2s infinite;
 }
 
 @keyframes shimmer {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 /* ========== Certificates Timeline ========== */
@@ -186,19 +202,19 @@
         gap: 1.5rem;
         padding: 1.5rem;
     }
-    
+
     .main-degree-card::before {
         width: 100%;
         height: 5px;
         top: 0;
         left: 0;
     }
-    
+
     .degree-icon-wrapper {
         width: 70px;
         height: 70px;
     }
-    
+
     .degree-icon-wrapper i {
         font-size: 2rem;
     }
@@ -208,40 +224,40 @@
     .education-timeline {
         padding: 0 1rem;
     }
-    
+
     .main-degree-card {
         margin-bottom: 2rem;
         padding: 1.2rem;
     }
-    
+
     .certificates-timeline {
         padding-left: 30px;
     }
-    
+
     .certificates-timeline::before {
         left: 15px;
     }
-    
+
     .node-dot {
         left: -20px;
         width: 10px;
         height: 10px;
     }
-    
+
     .certificate-card {
         padding: 1rem;
     }
-    
+
     .cert-header {
         gap: 0.8rem;
     }
-    
+
     .cert-icon {
         width: 45px;
         height: 45px;
         font-size: 1.2rem;
     }
-    
+
     .cert-meta {
         font-size: 0.85rem;
     }
@@ -252,52 +268,88 @@
         padding: 1rem;
         margin-bottom: 1.5rem;
     }
-    
+
     .degree-icon-wrapper {
         width: 60px;
         height: 60px;
     }
-    
+
     .degree-icon-wrapper i {
         font-size: 1.8rem;
     }
-    
+
     .degree-badge {
         font-size: 0.75rem;
         padding: 0.2rem 0.8rem;
     }
-    
+
     .certificates-timeline {
         padding-left: 25px;
     }
-    
+
     .certificates-timeline::before {
         left: 12px;
     }
-    
+
     .node-dot {
         left: -17px;
         width: 8px;
         height: 8px;
         border-width: 2px;
     }
-    
+
     .certificate-card {
         padding: 0.8rem;
     }
-    
+
     .cert-header {
         gap: 0.6rem;
     }
-    
+
     .cert-icon {
         width: 40px;
         height: 40px;
         font-size: 1.1rem;
         border-radius: 10px;
     }
-    
+
     .cert-meta {
         font-size: 0.8rem;
     }
+}
+
+/* ========== Certificate View Button ========== */
+.cert-info h4 {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 0.2rem;
+}
+
+.cert-view-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.9rem;
+    padding: 0.5rem 1rem;
+    background: rgba(var(--primary-color-rgb), 0.08);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-medium);
+    width: fit-content;
+}
+
+.cert-view-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(var(--primary-color-rgb), 0.3);
+}
+
+.cert-ext-icon {
+    font-size: 0.72rem;
+    opacity: 0.8;
 }

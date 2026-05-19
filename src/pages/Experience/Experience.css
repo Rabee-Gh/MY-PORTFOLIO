@@ -1,4 +1,3 @@
-
 /* ========== Experience Timeline ========== */
 .experience-timeline {
     position: relative;
@@ -128,14 +127,14 @@
     .experience-timeline::before {
         left: 30px;
     }
-    
+
     .timeline-item,
     .timeline-item:nth-child(even) {
         justify-content: flex-start;
         padding-right: 0;
         padding-left: 60px;
     }
-    
+
     .timeline-content::before {
         right: auto;
         left: -8px;
@@ -143,16 +142,16 @@
         border-left: 1px solid var(--border-color);
         transform: rotate(45deg);
     }
-    
+
     .timeline-marker {
         right: auto;
         left: 22px;
     }
-    
+
     .timeline-item:nth-child(even) .timeline-marker {
         left: 22px;
     }
-    
+
     .timeline-content {
         max-width: 100%;
     }
@@ -162,23 +161,23 @@
     .experience-timeline {
         margin-top: 2rem;
     }
-    
+
     .timeline-item {
         margin-bottom: 2rem;
     }
-    
+
     .timeline-content {
         padding: 1.5rem;
     }
-    
+
     .timeline-title {
         font-size: 1.1rem;
     }
-    
+
     .timeline-company {
         font-size: 0.9rem;
     }
-    
+
     .timeline-description {
         font-size: 0.9rem;
     }
@@ -188,36 +187,66 @@
     .experience-timeline {
         margin-top: 1.5rem;
     }
-    
+
     .timeline-item {
         margin-bottom: 1.5rem;
         padding-left: 50px;
     }
-    
+
     .timeline-content {
         padding: 1.2rem;
     }
-    
+
     .timeline-date {
         font-size: 0.8rem;
         padding: 0.3rem 1rem;
     }
-    
+
     .timeline-title {
         font-size: 1rem;
     }
-    
+
     .timeline-company {
         font-size: 0.85rem;
         gap: 0.3rem;
     }
-    
+
     .timeline-description {
         font-size: 0.85rem;
         line-height: 1.5;
     }
 }
 
-.mb-spicial{
+.mb-spicial {
     margin-bottom: 3.5rem !important;
+}
+
+/* ========== Recommendation Link ========== */
+.recommendation-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.55rem 1.1rem;
+    background: rgba(var(--primary-color-rgb), 0.08);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-medium);
+    width: fit-content;
+}
+
+.recommendation-link:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(var(--primary-color-rgb), 0.3);
+}
+
+.recommendation-link-icon {
+    font-size: 0.75rem;
+    opacity: 0.8;
 }

@@ -791,12 +791,13 @@ export const portfolioData = {
       companyEn: "Focal X Agency",
       location: "عن بُعد",
       locationEn: "Remote",
-      date: "يونيو 2024 – أبريل 2025",
-      dateEn: "June 2024 – April 2025",
+      date: "يونيو 2024 – ديسمبر 2025",
+      dateEn: "June 2024 – December 2025",
       description:
         "العمل على +15 مشروع كامل في ReactJS و JavaScript عادي لمعالجة تصميمات ويب تفاعلية كاملة مثل (المدونات، مركز الألعاب، مركز السفر). بناء واجهات مستخدم متجاوبة مع التركيز على تجربة المستخدم والأداء.",
       descriptionEn:
         "Work on +15 full projects in ReactJS & Vanilla JavaScript to handle full reactive web designs like (Blogs, Gaming Center, Traveling Center). Building responsive user interfaces with focus on UX and performance.",
+      recommendationUrl: "https://drive.google.com/file/d/1ZEUAcTaZHWLT82pV-W2eRD2vJZZFrLgS/view?usp=sharing",
     },
     {
       title: "مطور الواجهة الخلفية (تدريب)",
@@ -805,12 +806,13 @@ export const portfolioData = {
       companyEn: "Focal X Agency",
       location: "عن بُعد",
       locationEn: "Remote",
-      date: "أبريل 2025 – فبراير 2026",
-      dateEn: "April 2025 – February 2026",
+      date: "سبتمبر 2025 – ديسمبر 2025",
+      dateEn: "September 2025 – December 2025)",
       description:
         "العمل على +7 مشاريع كاملة في NodeJS لمعالجة واجهات برمجة التطبيقات RESTful مثل (المدونات، التجارة الإلكترونية، نظام إدارة المهام). تطوير واجهات برمجة تطبيقات آمنة وقابلة للتطوير مع تنفيذ المصادقة والتفويض باستخدام JWT.",
       descriptionEn:
         "Work on +7 full projects in NodeJS to handle RESTful APIs like (Blogs, Ecommerce, Task Management System). Developing secure and scalable APIs with authentication and authorization implementation using JWT.",
+      recommendationUrl: "https://drive.google.com/file/d/1ovK397rWAIElvEIWOdPVilg3tq0UyNGW/view?usp=sharing",
     },
     {
       title: "العمل عن بعد ",
@@ -833,8 +835,8 @@ export const portfolioData = {
       degreeEn: "BA Software Engineering",
       institution: "جامعة تشرين",
       institutionEn: "Tishreen University",
-      period: "سبتمبر 2021 – حتى الآن",
-      periodEn: "Sep 2021 – Present",
+      period: " 2021 –  2026",
+      periodEn: " 2021 – 2026",
       description:
         "متابعة درجة البكالوريوس في هندسة البرمجيات مع التركيز على تطوير الويب، هياكل البيانات، الخوارزميات، وقواعد البيانات.",
       descriptionEn:
@@ -847,6 +849,7 @@ export const portfolioData = {
           issuerEn: "Focal X",
           year: "2024",
           icon: "fas fa-code",
+          url: "https://drive.google.com/file/d/1jFhtMnF0o1Ly-bo1IWeCApf5Fpa-8xwQ/view?usp=sharing",
         },
         {
           name: "دبلوم تطوير الواجهة الخلفية NodeJS",
@@ -855,14 +858,25 @@ export const portfolioData = {
           issuerEn: "Focal X",
           year: "2025",
           icon: "fas fa-server",
+          url: "https://drive.google.com/file/d/1eZWa91WtEjMmw2pRBMSYGn1aZofO09eQ/view?usp=sharing",
         },
         {
-          name: "دبلوم اللغة الإنجليزية",
-          nameEn: "English Diploma",
+          name: "اللغة الإنجليزية - Active Reading Course",
+          nameEn: "English - Active Reading Course",
+          issuer: "ETC",
+          issuerEn: "ETC",
+          year: "2021",
+          icon: "fas fa-book-open",
+          url: "https://drive.google.com/file/d/1YJQXxphnbEiAFjuV1e9fQbWK7543acFt/view?usp=sharing",
+        },
+        {
+          name: "اللغة الإنجليزية - Tense Buster Course",
+          nameEn: "English - Tense Buster Course",
           issuer: "ETC",
           issuerEn: "ETC",
           year: "2021",
           icon: "fas fa-language",
+          url: "https://drive.google.com/file/d/1aq8MATl0VKRr2KVkL9H7rIy8ggrUbhm1/view?usp=sharing",
         },
       ],
     },

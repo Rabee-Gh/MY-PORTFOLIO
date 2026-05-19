@@ -51,7 +51,8 @@ const Hero = ({ data, isEnglish }) => {
           data-aos-delay="500"
         >
           <a
-            href="https://drive.google.com/file/d/1LJx5u6zCPOVwz6SMoXB6RhRZHNcUuLD9/view?usp=sharing"
+            // href="https://drive.google.com/file/d/1LJx5u6zCPOVwz6SMoXB6RhRZHNcUuLD9/view?usp=sharing"
+            href="https://drive.google.com/file/d/1AJzAwPiojQtGYvOTaKFza7RsKHNxksH8/view?usp=sharing"
             className="btn btn-primary"
             target="_blank"
             rel="noopener noreferrer"

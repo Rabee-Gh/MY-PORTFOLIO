@@ -11,28 +11,28 @@ const Experience = ({ data, isEnglish }) => {
       offset: 100,
       delay: 100
     })
-    
+
     AOS.refresh()
   }, [])
 
   return (
     <section id="experience" className="section">
       <div className="section-header mb-spicial">
-        <span 
+        <span
           className="section-subtitle"
           data-aos="fade-up"
           data-aos-delay="100"
         >
           {isEnglish ? 'My journey' : 'رحلتي'}
         </span>
-        <h2 
+        <h2
           className="section-title"
           data-aos="fade-up"
           data-aos-delay="200"
         >
           {isEnglish ? 'Experience' : 'الخبرات'}
         </h2>
-        <p 
+        <p
           className="section-description"
           data-aos="fade-up"
           data-aos-delay="300"
@@ -40,11 +40,11 @@ const Experience = ({ data, isEnglish }) => {
           {isEnglish ? 'Professional journey and work experience' : 'الرحلة المهنية والخبرات العملية'}
         </p>
       </div>
-      
+
       <div className="experience-timeline" id="timeline">
         {data.experience.map((exp, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className={`timeline-item ${index % 2 === 0 ? '' : 'even'}`}
             data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             data-aos-delay={300 + (index * 150)}
@@ -67,6 +67,18 @@ const Experience = ({ data, isEnglish }) => {
               <p className="timeline-description">
                 {isEnglish ? exp.descriptionEn : exp.description}
               </p>
+              {exp.recommendationUrl && (
+                <a
+                  href={exp.recommendationUrl}
+                  className="recommendation-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fas fa-certificate"></i>
+                  <span>{isEnglish ? 'View Recommendation' : 'عرض التوصية'}</span>
+                  <i className="fas fa-external-link-alt recommendation-link-icon"></i>
+                </a>
+              )}
             </div>
           </div>
         ))}
