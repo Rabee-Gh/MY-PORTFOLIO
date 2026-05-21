@@ -10,12 +10,12 @@ const Contact = ({ data, isEnglish }) => {
     subject: '',
     message: ''
   })
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [notification, setNotification] = useState(null)
-  
+
   const ACCESS_KEY = '2ce7366d-24e9-423f-8771-8a87ba2017b6'
-  
+
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -23,7 +23,7 @@ const Contact = ({ data, isEnglish }) => {
       offset: 100,
       delay: 100
     })
-    
+
     AOS.refresh()
   }, [])
 
@@ -51,7 +51,7 @@ const Contact = ({ data, isEnglish }) => {
           subject: formData.subject,
           message: formData.message,
           from_name: 'Portfolio Website',
-          botcheck: '' 
+          botcheck: ''
         })
       })
 
@@ -59,8 +59,8 @@ const Contact = ({ data, isEnglish }) => {
 
       if (result.success) {
         showNotification(
-          isEnglish 
-            ? 'Message sent successfully!' 
+          isEnglish
+            ? 'Message sent successfully!'
             : 'تم إرسال الرسالة بنجاح!',
           'success'
         )
@@ -69,12 +69,12 @@ const Contact = ({ data, isEnglish }) => {
         console.error('Web3Forms error:', result)
         throw new Error(result.message || 'Failed to send')
       }
-      
+
     } catch (error) {
       console.error('Submission error:', error)
       showNotification(
-        isEnglish 
-          ? 'Failed to send message. Please try again.' 
+        isEnglish
+          ? 'Failed to send message. Please try again.'
           : 'فشل إرسال الرسالة. يرجى المحاولة مرة أخرى.',
         'error'
       )
@@ -91,21 +91,21 @@ const Contact = ({ data, isEnglish }) => {
   return (
     <section id="contact" className="section">
       <div className="section-header">
-        <span 
+        <span
           className="section-subtitle"
           data-aos="fade-up"
           data-aos-delay="100"
         >
           {isEnglish ? "Let's talk" : 'لنتحدث'}
         </span>
-        <h2 
+        <h2
           className="section-title"
           data-aos="fade-up"
           data-aos-delay="200"
         >
           {isEnglish ? 'Contact Me' : 'تواصل معي'}
         </h2>
-        <p 
+        <p
           className="section-description"
           data-aos="fade-up"
           data-aos-delay="300"
@@ -113,15 +113,15 @@ const Contact = ({ data, isEnglish }) => {
           {isEnglish ? 'Feel free to reach out for collaborations or just to say hello' : 'لا تتردد في التواصل للتعاون أو مجرد التحية'}
         </p>
       </div>
-      
+
       <div className="contact-container">
-        <div 
+        <div
           className="contact-info"
           data-aos="fade-right"
           data-aos-delay="400"
           data-aos-duration="700"
         >
-          <div 
+          <div
             className="contact-item"
             data-aos="fade-up"
             data-aos-delay="500"
@@ -132,11 +132,11 @@ const Contact = ({ data, isEnglish }) => {
             </div>
             <div className="contact-details">
               <h4>{isEnglish ? 'Location' : 'الموقع'}</h4>
-              <p>{isEnglish ? 'Swaida, Syria' : 'السويداء، سوريا'}</p>
+              <p>{isEnglish ? 'Saudi Arabia' : 'المملكة العربية السعودية'}</p>
             </div>
           </div>
-          
-          <div 
+
+          <div
             className="contact-item"
             data-aos="fade-up"
             data-aos-delay="600"
@@ -150,8 +150,8 @@ const Contact = ({ data, isEnglish }) => {
               <p>{data.personalInfo.email}</p>
             </div>
           </div>
-          
-          <div 
+
+          <div
             className="contact-item"
             data-aos="fade-up"
             data-aos-delay="700"
@@ -165,8 +165,8 @@ const Contact = ({ data, isEnglish }) => {
               <p>{data.personalInfo.phone}</p>
             </div>
           </div>
-          
-          <div 
+
+          <div
             className="social-links"
             data-aos="zoom-in"
             data-aos-delay="800"
@@ -183,8 +183,8 @@ const Contact = ({ data, isEnglish }) => {
             </a>
           </div>
         </div>
-        
-        <div 
+
+        <div
           className="contact-form"
           data-aos="fade-left"
           data-aos-delay="400"
@@ -192,67 +192,67 @@ const Contact = ({ data, isEnglish }) => {
         >
           <h3>{isEnglish ? 'Send a Message' : 'أرسل رسالة'}</h3>
           <form id="contactForm" onSubmit={handleSubmit}>
-            <input type="checkbox" name="botcheck" className="hidden" style={{display: 'none'}} />
-            
+            <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
+
             <div className="form-group">
               <label className="form-label" htmlFor="name">
                 {isEnglish ? 'Your Name' : 'اسمك'}
               </label>
-              <input 
-                type="text" 
-                id="name" 
-                className="form-input" 
+              <input
+                type="text"
+                id="name"
+                className="form-input"
                 value={formData.name}
                 onChange={handleChange}
-                required 
+                required
               />
             </div>
-            
+
             <div className="form-group">
               <label className="form-label" htmlFor="email">
                 {isEnglish ? 'Your Email' : 'بريدك الإلكتروني'}
               </label>
-              <input 
-                type="email" 
-                id="email" 
-                className="form-input" 
+              <input
+                type="email"
+                id="email"
+                className="form-input"
                 value={formData.email}
                 onChange={handleChange}
-                required 
+                required
               />
             </div>
-            
+
             <div className="form-group">
               <label className="form-label" htmlFor="subject">
                 {isEnglish ? 'Subject' : 'الموضوع'}
               </label>
-              <input 
-                type="text" 
-                id="subject" 
-                className="form-input" 
+              <input
+                type="text"
+                id="subject"
+                className="form-input"
                 value={formData.subject}
                 onChange={handleChange}
-                required 
+                required
               />
             </div>
-            
+
             <div className="form-group">
               <label className="form-label" htmlFor="message">
                 {isEnglish ? 'Message' : 'الرسالة'}
               </label>
-              <textarea 
-                id="message" 
-                className="form-textarea" 
+              <textarea
+                id="message"
+                className="form-textarea"
                 value={formData.message}
                 onChange={handleChange}
                 required
               ></textarea>
             </div>
-            
-            <button 
-              type="submit" 
-              className="btn btn-primary" 
-              style={{ width: '100%' }} 
+
+            <button
+              type="submit"
+              className="btn btn-primary"
+              style={{ width: '100%' }}
               disabled={isSubmitting}
             >
               {isSubmitting ? (
@@ -268,9 +268,9 @@ const Contact = ({ data, isEnglish }) => {
               )}
             </button>
           </form>
-          
+
           {notification && (
-            <div 
+            <div
               className={`notification notification-${notification.type}`}
               data-aos="fade-up"
               data-aos-delay="100"
