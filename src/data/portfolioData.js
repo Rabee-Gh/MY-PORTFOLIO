@@ -21,7 +21,7 @@ export const portfolioData = {
     location: "المملكة العربية السعودية",
     locationEn: "Saudi Arabia",
     email: "rabeeghanem0@gmail.com",
-    phone: "+963 997 037 470",
+    phone: "+966 557207492",
     linkedin: "https://www.linkedin.com/in/rabee-ghanem-150222360",
     summary:
       "مطور ويب طموح وموجه نحو النتائج، متخصص في MERN stack (MongoDB، Express.js، React.js، Node.js)، مع خبرة عملية مكتسبة من خلال تدريبين مكثفين والعديد من المشاريع الواقعية. أتمتة القدرة على بناء تطبيقات ويب متجاوبة وقابلة للتطوير من الفكرة إلى النشر.",
